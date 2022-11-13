@@ -11,20 +11,14 @@
   transition-timing-function: var(--transition-timing-function);
 }
 
-.logo:hover,
-.logo:focus {
-  color: var(--main-link-color);
-}
-
 .logo-studio {
   color: var(--main-title-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-  transition-timing-function: var(--transition-timing-function);
 }
 
-.logo-studio:hover,
-.logo-studio:focus {
+.logo:hover .logo-studio,
+.logo:focus .logo-studio {
   color: var(--main-link-color);
 }

@@ -1,13 +1,17 @@
-@import './utils/vars';
 @import './base/reset';
+@import './utils/vars';
+@import './utils/hidden';
+
 @import './components/container';
 @import './components/logo';
-@import './utils/hidden';
+@import './components/btn';
+@import './components/modal';
+@import './components/subscribe';
+@import './components/social';
+
 @import './loyouts/header';
 @import './loyouts/hero';
-@import './components/btn';
 @import './loyouts/portfolio';
-@import './loyouts/modal';
 @import './loyouts/benefits';
 @import './loyouts/services';
 @import './loyouts/team';
