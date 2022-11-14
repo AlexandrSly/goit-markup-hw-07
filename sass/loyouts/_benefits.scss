@@ -1,9 +1,11 @@
-.benefits {
+.benefits__container {
   margin-bottom: 0px;
   margin-top: 0;
   padding: 94px 0;
+}
 
-  &-block {
+.benefits {
+  &__block {
     height: 120px;
     width: 270px;
     background-color: #f5f4fa;
@@ -14,7 +16,7 @@
     border-radius: 4px;
   }
 
-  &-title {
+  &__title {
     margin-top: 0;
     margin-bottom: 10px;
     font-weight: 700;
@@ -25,10 +27,15 @@
     width: 270px;
   }
 
-  &-subtitle {
+  &__subtitle {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1.71;
     width: 270px;
+  }
+
+  .benefits__list {
+    display: flex;
+    gap: 30px;
   }
 }

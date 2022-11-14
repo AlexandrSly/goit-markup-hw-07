@@ -14,8 +14,7 @@
     height: 100%;
     fill: #afb1b8;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align-list;
     border: 1px solid #afb1b8;
     border-radius: 5px;
     transition-property: border-color, fill;

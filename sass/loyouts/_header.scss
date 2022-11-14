@@ -2,68 +2,82 @@
   padding: 25px 0;
   border: 1px solid #ececec;
 }
-.main-menu {
+.header__container {
   display: flex;
 }
 
-.main-nav {
+.header__navigation {
   display: flex;
   align-items: center;
 }
 
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav {
+.heder__menu {
   display: flex;
   margin-left: 93px;
 }
 
-.site-nav .link {
-  display: block;
-  color: var(--main-title-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--transition-timing-function);
+.menu {
+  & .item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  & .link {
+    display: block;
+    color: var(--main-title-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing-function);
+  }
+
+  & .link:hover,
+  & .link:focus {
+    color: #2196f3;
+  }
+
+  & li .current {
+    color: var(--main-link-color);
+  }
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196f3;
-}
-
-.auth-contacts {
-  display: flex;
-}
-.auth-nav {
+.header__connect {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.auth-link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--second-title-color);
-  display: flex;
-  align-items: center;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--transition-timing-function);
-}
+.connect {
+  & .link:hover,
+  & .link:focus {
+    color: #2196f3;
+  }
 
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: #2196f3;
-}
+  & .connect__item + .connect__item {
+    margin-left: 50px;
+  }
 
-.site-nav li .current {
-  color: var(--main-link-color);
+  &__link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing-function);
+  }
+
+  &__symbol {
+    fill: currentColor;
+    margin-right: 10px;
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+  }
 }
 
 .item {
@@ -80,18 +94,4 @@
   height: 4px;
   border-radius: 2px;
   background: #2196f3;
-}
-
-.auth-nav .item + .item {
-  margin-left: 50px;
-}
-
-.auth-symbol {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.auth-symbol:hover,
-.auth-symbol:focus {
-  color: #2196f3;
 }

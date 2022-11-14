@@ -16,20 +16,20 @@
   transition-property: color background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-}
 
-.btn.primary {
-  color: #ffffff;
-  background-color: #2196f3;
-}
+  &.primary {
+    color: #ffffff;
+    background-color: #2196f3;
+  }
 
-.btn.secondary {
-  color: #2196f3;
-  background-color: #ffffff;
-}
+  &.secondary {
+    color: #2196f3;
+    background-color: #ffffff;
+  }
 
-.btn:hover,
-.btn:focus {
-  color: var(--main-btn-color);
-  background-color: #ffffff;
+  &:hover,
+  &:focus {
+    color: var(--main-btn-color);
+    background-color: #ffffff;
+  }
 }

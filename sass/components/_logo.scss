@@ -9,16 +9,16 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
-}
 
-.logo-studio {
-  color: var(--main-title-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--transition-timing-function);
-}
+  &__icon {
+    color: var(--main-title-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing-function);
+  }
 
-.logo:hover .logo-studio,
-.logo:focus .logo-studio {
-  color: var(--main-link-color);
+  &:hover .logo__icon,
+  &:focus .logo__icon {
+    color: var(--main-link-color);
+  }
 }
