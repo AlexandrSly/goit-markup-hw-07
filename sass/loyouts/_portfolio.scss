@@ -109,6 +109,20 @@
     overflow: hidden;
   }
 
+  .img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .flex-element:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .flex-element {
+    width: 370px;
+  }
+
   &-text {
     width: 100%;
     height: 100%;
@@ -122,20 +136,6 @@
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
-    color: &;
-  }
-
-  .img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .flex-element:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  .flex-element {
-    width: 370px;
+    color: white;
   }
 }
